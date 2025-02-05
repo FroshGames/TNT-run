@@ -1,6 +1,6 @@
-name: TNTOnSand
+name: TNTRunPluguin
 version: '1.0'
-main: am.FroshGames.tNTRun.TNTOnSand
+main: am.FroshGames.tntrun.TNTRunPlugin
 api-version: '1.20'
 commands:
   toggleTNT:
