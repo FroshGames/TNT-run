@@ -6,6 +6,7 @@
 
 - 🏃‍♂️ La arena desaparece al pisarla si hay TNT debajo.
 - 💥 La TNT se activa tras un tiempo configurable.
+- ⏳ **Nuevo:** Se puede configurar el tiempo de desaparición de la arena antes de que caiga.
 - 🔊 Sonido de activación de TNT cuando la explosión es inminente.
 - ⚙️ Comando `/tntrun <delay>` para cambiar el tiempo de activación de la TNT.
 - 🔧 Configuración persistente en `config.yml`, asegurando que el delay se mantenga tras reinicios del servidor.
@@ -26,4 +27,4 @@
 ## ⚙️ Configuración (`config.yml`)
 
 ```yml
-tnt-activation-delay: 20 # Tiempo en ticks antes de que la TNT explote
+tnt-activation-delay: 20  # Tiempo en ticks antes de que la TNT explote
