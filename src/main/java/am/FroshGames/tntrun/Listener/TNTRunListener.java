@@ -26,8 +26,8 @@ public class TNTRunListener implements Listener {
         Block belowBlock = player.getLocation().subtract(0, 2, 0).getBlock();
 
         if (block.getType() == Material.SAND && belowBlock.getType() == Material.TNT) {
-            int delay = plugin.getPluginConfig().getInt("tnt-activation-delay", 20);
-            block.setType(Material.AIR);
+            FileConfiguration config = plugin.getPluginConfig();
+            int tntDelay = config.getInt("tnt-activation-delay", 20);
 
             new BukkitRunnable() {
                 @Override
@@ -38,7 +38,7 @@ public class TNTRunListener implements Listener {
                     });
                     player.playSound(player.getLocation(), Sound.ENTITY_TNT_PRIMED, 1.0f, 1.0f);
                 }
-            }.runTaskLater(plugin, delay);
+            }.runTaskLater(plugin, tntDelay);
         }
     }
 }
