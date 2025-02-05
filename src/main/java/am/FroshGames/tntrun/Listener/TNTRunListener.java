@@ -2,6 +2,7 @@ package am.FroshGames.tntrun.Listener;
 
 import am.FroshGames.tntrun.TNTRunPlugin;
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
@@ -24,7 +25,10 @@ public class TNTRunListener implements Listener {
         Player player = event.getPlayer();
         Block block = player.getLocation().subtract(0, 1, 0).getBlock();
         Block belowBlock = player.getLocation().subtract(0, 2, 0).getBlock();
-
+        // Evita que los jugadores en modo espectador activen el evento
+        if (player.getGameMode() == GameMode.SPECTATOR) {
+            return;
+        }
         if (block.getType() == Material.SAND && belowBlock.getType() == Material.TNT) {
             FileConfiguration config = plugin.getPluginConfig();
             int tntDelay = config.getInt("tnt-activation-delay", 20);
