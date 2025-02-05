@@ -1,4 +1,4 @@
-package am.FroshGames.tntrun.comand;
+package am.FroshGames.tntrun.command;
 
 import am.FroshGames.tntrun.TNTRunPlugin;
 import org.bukkit.command.Command;

@@ -1,8 +1,7 @@
 package am.FroshGames.tntrun;
 
-
 import am.FroshGames.tntrun.Listener.TNTRunListener;
-import am.FroshGames.tntrun.comand.TNTRunCommand;
+import am.FroshGames.tntrun.command.TNTRunCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;

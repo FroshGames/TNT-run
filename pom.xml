@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>am.FroshGames</groupId>
-    <artifactId>TNTRunPluguin</artifactId>
-    <version>0.1</version>
+    <artifactId>TNTRunPlugin</artifactId>
+    <version>0.2</version>
     <packaging>jar</packaging>
 
-    <name>TNTOnSand</name>
+    <name>TNTRunPlugin</name>
 
     <properties>
         <java.version>17</java.version>
