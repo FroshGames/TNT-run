@@ -4,7 +4,7 @@
 
 ## 🚀 Características
 
-- 🏃‍♂️ La arena desaparece al pisarla si hay TNT debajo.
+- 🏃‍♂️ La arena ya no desaparece al pisarla si hay TNT debajo.
 - 💥 La TNT se activa tras un tiempo configurable.
 - ⏳ **Nuevo:** Se puede configurar el tiempo de desaparición de la arena antes de que caiga.
 - 🔊 Sonido de activación de TNT cuando la explosión es inminente.
