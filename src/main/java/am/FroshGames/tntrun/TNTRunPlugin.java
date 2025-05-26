@@ -38,3 +38,4 @@ public class TNTRunPlugin extends JavaPlugin {
         return config;
     }
 }
+// Pluguin echo por Froshy
